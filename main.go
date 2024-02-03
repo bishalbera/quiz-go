@@ -9,6 +9,7 @@ import (
 
 func main() {
 
+	parseCsv()
 
 }
 
@@ -31,4 +32,10 @@ func parseCsv() [][] string {
 
 	return lines
 
+}
+
+
+func exit(msg string) {
+	fmt.Println(msg)
+	os.Exit(1)
 }
